@@ -25,3 +25,9 @@ ver의 naming rule은 다음과 같습니다.
     - 다음의 시나리오 대로 over smapling을 사용하고 로지스틱 회귀를 통한 분류성능 비교
         - borderline-smote -> adasyn
         - adasyn -> borderline-smote
+
+3. ver 1.1.1 (11.10)
+    - ver 1.1.0과 동일한 실험을 진행.
+    - ver 1.1.0에서 사용한 adasyn 알고리즘을 다음의 알고라즘으로 변경하여 실험 진행
+     - svm-smote
+     - k-means smote
