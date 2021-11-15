@@ -26,7 +26,7 @@ ver의 naming rule은 다음과 같습니다.
         - borderline-smote -> adasyn
         - adasyn -> borderline-smote
 
-3. ver 1.1.1 (11.10)
+3. ver 1.1.1 (11.15)
     - ver 1.1.0과 동일한 실험을 진행.
     - ver 1.1.0에서 사용한 adasyn 알고리즘을 다음의 알고라즘으로 변경하여 실험 진행
      - svm-smote
