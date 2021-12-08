@@ -6,7 +6,10 @@
 ## 1. 진행상황
 ver의 naming rule은 다음과 같습니다.
 - ver x.y.z
-    - x : 연구 방향의 변화 (ex borderline smote와 특정 오버샘플링 기법을 적용할 때, 그 순서의 변화에 따른 성능 차이 확인 -> borderline smote를 적용하고 다른 오버샘플링 기법을 적용할때, 가장 좋은 성능을 보이는 오버샘플링 기법 확인)
+    - x : 
+        - 연구 방향의 변화 (ex borderline smote와 특정 오버샘플링 기법을 적용할 때, 그 순서의 변화에 따른 성능 차이 확인 -> borderline smote를 적용하고 다른 오버샘플링 기법을 적용할때, 가장 좋은 성능을 보이는 오버샘플링 기법 확인)
+        - 연구 단계의 변화 (ex borderline smote와 특정 오버샘플링 기법을 적용할 때, 그 순서의 변화에 따른 성능 차이 확인 ->
+        앞선 실험의 결과를 검증하기 위한 다음 실험을 진행)
     - y : 사용되는 라이브러리, 데이터셋의 변화
     - z : 동일한 방향, 동일한 라이브러리를 사용한 새로운 테스트
 
@@ -31,3 +34,12 @@ ver의 naming rule은 다음과 같습니다.
     - ver 1.1.0에서 사용한 adasyn 알고리즘을 다음의 알고라즘으로 변경하여 실험 진행
      - svm-smote
      - k-means smote
+
+4. ver 2.0.0 (12.08)
+    - borderline smote를 진행 후 다른 증강 기법을 적용했을 때 더 결과가 좋았던 원인을 분석
+        - borderline smote에 관한 논문 리서치
+        - 임의의 불균형 데이터를 생성하여 4가지 경우에 대해 오버샘플링 이후 경계선 데이터 개수를 직접 확인
+            - borderline smote -> random over sampling
+            - random over sampling -> borderline smote
+            - borderline smote -> smote
+            - smote -> borderline smote
