@@ -43,3 +43,9 @@ ver의 naming rule은 다음과 같습니다.
             - random over sampling -> borderline smote
             - borderline smote -> smote
             - smote -> borderline smote
+
+5. ver 2.0.1 (12.15)
+    - ver 1.0.0의 실험에서 있었던 오류 수정 및 보완
+        - 각각 smote 기법에서 data를 over sampling 해주는 비율을 재조정
+        - 단독으로 smote만 실행했을 경우의 분류 성능 실험 추가
+            - 이때, 일반 smote만 실행하여 Minor class data의 개수를 Major class data와 같게 맞춰줌
